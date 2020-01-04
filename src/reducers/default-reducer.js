@@ -3,11 +3,11 @@
 
 import { actions } from '../actions';
 
-export default (state = { gifs:[] }, action) => {
+export default (state = { characters:[] }, action) => {
     switch(action.type) {
-        case actions.FETCH_GIF_SUCCESS:
-            return {...state, gifs: action.payload }
-            case actions.FETCH_GIF_ERROR:
+        case actions.FETCH_CHARACTERS_SUCCESS:
+            return {...state, characters: action.payload }
+        case actions.FETCH_CHARACTERS_ERROR:
                 return {...state, error: actions.payload }
         default:
             return state;

@@ -1,3 +1,2 @@
-export * from "./Sidebar";
-export * from "./Header";
-export * from "./Content";
+export * from './header';
+export * from './image-gallery';
