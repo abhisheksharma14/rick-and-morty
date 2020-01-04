@@ -28,8 +28,10 @@ class Gallery extends Component {
                     <Col xs={5} md={3} offset={2} key={idx}>
                         <Card style={{minHeight:"300px", marginTop:"10px"}}>
                             <Card.Img variant="top" src={chr.image} style={{maxWidth:"100%", maxHeight: "300px"}}/>
-                            <Card.Body>
+                            <Card.ImgOverlay>
                                 <Card.Title>{chr.name}</Card.Title>
+                            </Card.ImgOverlay>
+                            <Card.Body>
                                 <Card.Text>
                                     Species : {chr.species}<br />
                                     Status : {chr.status}<br />
